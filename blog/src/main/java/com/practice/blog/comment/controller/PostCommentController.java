@@ -17,7 +17,7 @@ import java.net.URI;
 @RequiredArgsConstructor
 public class PostCommentController {
 
-    private final CommentService commentService;
+    private final CommentService commentService; 
 
     // 댓글 생성
     @PostMapping("/posts/{postId}/comments")
