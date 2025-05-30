@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class FollowController {
 
-    private final FollowService followService;
+    private final FollowService followService; 
     private final AccountService accountService;
 
     // 팔로우 걸기(추가)
