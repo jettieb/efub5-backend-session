@@ -20,7 +20,7 @@ public class AccountController {
 
     // 회원 조회: GET /accounts/{accountId}
     @GetMapping("/{accountId}")
-    public ResponseEntity<AccountResponseDto> getAccount(@PathVariable("accountId") Long accountId) {
+    public ResponseEntity<AccountResponseDto> getAccount(@PathVariable("accountId") Long accountId) { 
         AccountResponseDto responseDto = accountService.getAccount(accountId);
         return ResponseEntity.ok(responseDto);
     }
