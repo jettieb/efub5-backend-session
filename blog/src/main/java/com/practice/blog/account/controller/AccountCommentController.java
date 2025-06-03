@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("/accounts/{accountId}/comments")
 public class AccountCommentController {
-    private final CommentService commentService;
+    private final CommentService commentService; 
 
     @GetMapping
     public ResponseEntity<AccountCommentResponse>getAccountComments(@PathVariable("accountId") Long accountId) {
